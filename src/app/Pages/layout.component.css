@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  padding-top: 64px; /* Altura aproximada del toolbar */
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1001;
+}
+
+.translucent {
+  background: rgba(255, 255, 255, 0.644); /* blanco translúcido */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

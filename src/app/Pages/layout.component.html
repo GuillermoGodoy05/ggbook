@@ -1,0 +1,25 @@
+
+<app-header (scrollToSection)="scrollTo($event)" ></app-header>
+
+
+<section id="home">
+    <app-home></app-home>
+</section>
+<section id="projects">
+    <app-projects></app-projects>
+</section>
+<section id="experience">
+    <app-experience></app-experience>
+</section>
+<section id="about">
+    <app-about></app-about>
+</section>
+
+<!-- Boton para subir -->
+<button 
+  mat-fab 
+  color="primary" 
+  class="scroll-top translucent" 
+  (click)="scrollTo('home')">
+  <mat-icon>arrow_upward</mat-icon>
+</button>
