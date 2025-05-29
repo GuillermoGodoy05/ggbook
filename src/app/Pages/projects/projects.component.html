@@ -1,6 +1,14 @@
+<div class="project-wrapper">
+  <h4 class="project-title">Latest Projects</h4>
 
-<div style="height: 150vh; width: 100%; background-color: aqua;">
-
-    
-    <p>projects works!</p>
+  <div class="project-container">
+    <mat-card class="project-card" *ngFor="let proj of projects">
+      <div class="card-content">
+        <span>{{ proj.name }}</span>
+        <!-- Cuando tengas imagen:
+        <img [src]="proj.imageUrl" alt="{{ proj.name }}">
+        -->
+      </div>
+    </mat-card>
+  </div>
 </div>

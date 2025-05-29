@@ -4,11 +4,23 @@ mat-toolbar {
   left: 0;
   width: 100%;
   z-index: 1000;
+  display: flex;
+  justify-content: end;
+  height: 70px;
+  padding-right: 3em;
+
+}
+
+mat-toolbar button {
+  margin-left: 50px;
+  color: rgb(181, 174, 223);
+  font-size: 0.74em;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .translucent {
-  background: rgba(255, 255, 255, 0.644); /* blanco translúcido */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(34, 40, 49, 0.5); /* #222831 con opacidad del 60% */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(4px);
 }
