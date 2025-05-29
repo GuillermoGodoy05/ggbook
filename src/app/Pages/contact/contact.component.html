@@ -1,0 +1,22 @@
+
+<div class="contact-container">
+    <h2>Contact Me</h2>
+
+    <div class="contact-list">
+        <div class="contact-item" *ngFor="let contact of contacts">
+            <a *ngIf="contact.link" [href]="contact.link" target="_blank" rel="noopener noreferrer">
+                <mat-icon>{{ contact.icon }}</mat-icon>
+                <span>{{ contact.label }}</span>
+            </a>
+
+            <div *ngIf="!contact.link" class="email-display">
+                <mat-icon>{{ contact.icon }}</mat-icon>
+                <span>{{ contact.label }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <p>Gracias por pasar 👽</p>
+</div>

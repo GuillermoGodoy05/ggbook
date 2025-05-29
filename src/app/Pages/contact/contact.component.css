@@ -1,0 +1,47 @@
+.contact-container {
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 3em;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    color: rgb(201, 195, 236);
+    width: 60%;
+    border-radius: 10px;
+    border-top: 2px solid rgba(181, 174, 223, 0.4);
+    border-bottom: 2px solid rgba(181, 174, 223, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* Diseño horizontal */
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    /* para que se acomode si hay muchos */
+}
+
+.contact-item a,
+.contact-item .email-display {
+    color: rgb(201, 195, 236);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: transform 0.2s ease;
+}
+
+.contact-item a:hover {
+    transform: scale(1.1);
+}
+
+mat-icon {
+    font-size: 1.5em;
+}

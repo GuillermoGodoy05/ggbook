@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -17,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
     ProjectsComponent,
     ExperienceComponent,
     AboutComponent,
+    ContactComponent,
     MatIconModule,
     MatButtonModule
   ],

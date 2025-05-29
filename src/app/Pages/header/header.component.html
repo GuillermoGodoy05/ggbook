@@ -1,7 +1,16 @@
 <mat-toolbar class="translucent">
-  <button mat-button (click)="onClick('home')">Home</button>
-  <button mat-button (click)="onClick('projects')">Projects</button>
-  <button mat-button (click)="onClick('experience')">Experience</button>
-  <button mat-button (click)="onClick('about')">About Me</button>
-  <button mat-button style="border: 1px solid rgba(181, 174, 223, 0.4);" >CV</button>
+
+  <div class="toolbar-left" (click)="onClick('home')">
+    <img src="/LogoGGp.png" alt="Foto de perfil"  />
+  </div>
+
+  <div class="toolbar-right">
+    <button mat-button (click)="onClick('home')">Home</button>
+    <button mat-button (click)="onClick('projects')">Projects</button>
+    <button mat-button (click)="onClick('experience')">Experience</button>
+    <button mat-button (click)="onClick('about')">About Me</button>
+    <button mat-button (click)="onClick('contact')">Contact</button>
+    <button mat-button class="cv-button">CV</button>
+  </div>
+
 </mat-toolbar>
