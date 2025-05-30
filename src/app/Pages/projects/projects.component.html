@@ -5,10 +5,35 @@
     <mat-card class="project-card" *ngFor="let proj of projects">
       <div class="card-content">
         <span>{{ proj.name }}</span>
-        <!-- Cuando tengas imagen:
-        <img [src]="proj.imageUrl" alt="{{ proj.name }}">
-        -->
+        <p>{{proj.description}}</p>
+
+        <div class="tech-tags">
+          <span class="tech-tag" *ngFor="let t of proj.tech">{{ t }}</span>
+        </div>
+
+        <div class="projectsBt-list">
+          <div class="projectsBt-item">
+
+            <a [href]="proj.link2" target="_blank" rel="noopener noreferrer">
+              <span>{{ proj.label2 }}</span>
+              <mat-icon>{{ proj.icon2 }}</mat-icon>
+            </a>
+
+            <a [href]="proj.link3" target="_blank" rel="noopener noreferrer">
+              <span>{{ proj.label3 }}</span>
+              <mat-icon>{{ proj.icon3 }}</mat-icon>
+            </a>
+
+            <a *ngIf="proj.linkOp" [href]="proj.linkOp" target="_blank" rel="noopener noreferrer">
+              <span>{{ proj.labelOp }}</span>
+              <mat-icon>{{ proj.iconOp }}</mat-icon>
+            </a>
+
+          </div>
+        </div>
+
       </div>
     </mat-card>
+
   </div>
 </div>

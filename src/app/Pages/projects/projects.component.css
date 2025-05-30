@@ -1,5 +1,5 @@
 .project-wrapper {
-  padding: 2em 2em;
+  padding: 2em;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 /* Acomodar 2 columnas en pantallas grandes */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 3em;
   justify-items: center;
   width: 70%;
@@ -23,8 +23,8 @@
 
 .project-card {
   width: 100%;
-  height: 12em; 
-  background-color: #4a3775;
+  height: 12em;
+  background-color: #0a0a20;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -32,20 +32,87 @@
   color: #2d2d2d;
   font-size: 1.5em;
   font-weight: bold;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /*   transition: transform 0.2s ease-in-out; */
 }
 
-.project-card:hover {
+/* .project-card:hover {
   transform: scale(1.05);
-}
+} */
 
 .card-content {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-content span {
+  color: rgb(201, 195, 236);
+ 
+}
+
+.card-content p {
+  color: rgb(47, 138, 145);
+  font-size: 0.75em;
 }
 
 @media screen and (max-width: 768px) {
   .project-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---- Buttons ---- */
+
+
+.tech-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.tech-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #dcdcdc;
+  padding: 0.4em 0.4em 0.6em 0.4em;
+  font-size: 0.6em;
+  border-radius: 12px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+
+/* ---- Icons ---- */
+
+.projectsBt-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.projectsBt-item a,
+.projectsBt-item {
+  color: rgb(201, 195, 236);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  transition: transform 0.2s ease;
+}
+
+.projectsBt-item {
+  gap: 1em;
+}
+
+.projectsBt-item a:hover {
+  transform: scale(1.1);
+}
+
+mat-icon {
+  font-size: 1em;
+
 }
