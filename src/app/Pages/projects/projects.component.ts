@@ -34,8 +34,7 @@ export class ProjectsComponent {
 
       label3: 'Git',
       icon3: 'code',
-      link3: 'https://github.com/GuillermoGodoy05',
-
+      link3: 'https://github.com/GuillermoGodoy05'
     },
     {
       name: 'API Sistema Ventas',
@@ -45,7 +44,7 @@ export class ProjectsComponent {
 
       label2: 'Try',
       icon2: 'computer',
-      link2: 'https://matesoft-myfinances.netlify.app/',
+      link2: 'https://sistemaventasportfolio.netlify.app/',
 
       label3: 'Back',
       icon3: 'code',
