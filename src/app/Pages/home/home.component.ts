@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     MatCardModule,
     MatIconModule
+    
+    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
