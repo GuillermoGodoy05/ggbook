@@ -39,7 +39,7 @@
 
 .profile-header h2 {
   font-size: 4.4rem;
-  font-weight: 100;
+  font-weight: bold;
   margin: 0;
 
 }
@@ -127,27 +127,36 @@
     row-gap: 25px;
   }
 
+
   .profile-header {
-    gap: 20px;
+    display: flex;
+    align-items: center;
     margin-top: 5em;
+    text-align: left;
+    /* Texto alineado a la izquierda dentro del bloque */
+    justify-content: center;
+    /* Centra la imagen + texto como conjunto */
+    gap: 15px;
+
   }
+
 
   .profile-photo {
     width: 240px;
     height: 240px;
-    margin-top: 0.5em;
+
   }
 
   .profile-header h2 {
-    font-size: 4.4rem;
+    font-size: 4.2rem;
   }
 
   .profile-header h3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    margin: 21px 0;
   }
 
   .tech-title {
-    font-size: 2.2em;
     margin-bottom: 1.8em;
   }
 
@@ -168,7 +177,7 @@
   }
 
   .profile-header {
-    gap: 40px;
+    gap: 50px;
   }
 
   .profile-photo {
@@ -185,7 +194,6 @@
   }
 
   .tech-title {
-    font-size: 2.2em;
     margin-bottom: 2em;
   }
 
