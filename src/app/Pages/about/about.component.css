@@ -6,8 +6,7 @@
 .project-title {
     font-size: 2em;
     font-weight: bold;
-    color: rgb(201, 195, 236);
-    font-family: 'Playfair Display', serif;
+
     
     margin-top: 3em;
 }
@@ -21,18 +20,17 @@
 
 
 .experience {
-    justify-content: center;
-    text-align: center;
-    font-size: 1.4em;
-    font-family: 'Lucida Sans';
-    color: rgb(181, 174, 223);
+ justify-content: center;
+    text-align: left;
+    font-size: 1.8em;
     padding: 2em;
     padding-top: 0px;
-
 }
 
+/*  
 .imagen {
     height: 370px;
     text-align: center;
     border-radius: 5px;
 }
+    */

@@ -1,88 +1,94 @@
-.tile-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 1em;
-}
-
-.tile-content h2,
-.tile-content h3 {
-    margin: 0.2em 0;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: rgb(201, 195, 236);
-    text-shadow: rgb(181, 174, 223) -0.5px -0.5px 3.3px, rgb(119, 144, 148) 0px 0px 0.3px;
-}
-
-.tile-content h2 {
-    font-size: 3.5em;
-}
-
-.tile-content h3 {
-    font-size: 2.5em;
-}
-
-.imagen {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid rgba(181, 174, 223, 0.4);
-    box-shadow: 0 0 8px rgba(181, 174, 223, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+.container {
+  width: 65%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: grid;
+  row-gap: 80px;
+  
 }
 
 
-.imagen:hover {
-    transform: scale(1.03);
-    border-color: rgb(181, 174, 223);
-    box-shadow: 0 0 15px rgba(136, 0, 255, 0.6);
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-top: 1.9em;
+  text-align: left;       /* Texto alineado a la izquierda dentro del bloque */
+  justify-content: center; /* Centra la imagen + texto como conjunto */
+  gap: 40px;              /* Separación entre imagen y texto */
+}
+
+.profile-header-text { 
+  text-align: left; /* El texto dentro alineado a la izquierda */
 }
 
 
-/* ----------- Development Stack ----------- */
+/* Ajuste del contenedor de la imagen */
+.profile-main {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+.profile-header h2 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-header h3, span {
+  font-size: 2.5rem;
+  font-weight: 600;  
+  margin: 14px 0 0;
+
+}
+
+.profile-photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 60px;
+  object-fit: cover;
+  border: 3px solid #ece6f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* ---- tech Section ----- */
+.tech-section {
+  grid-column: 1 / -1;
+  
+}
 
 .tech-title {
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(201, 195, 236);
-  margin-bottom: 1em;
-  font-family: 'Playfair Display', serif;
-
-}
-
-
-.lan-card {    
-    width: 100%;
-    min-height: 10em;
-    height: auto;        
+  font-size: 1.5rem;
+  color: #5a4b71;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 
 .tech-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1em;
-  margin: 2em auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.tech-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .tech-card {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #d3dce6;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #5a4b71;
   border-radius: 12px;
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
 }
 
 .tech-card:hover {
   transform: scale(1.05);
 }
-

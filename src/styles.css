@@ -1,46 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100%;
 }
 
 /* Tema claro */
 .light-theme {
-  --bg-color: #f4faff;
+
+  --bg-color: #ece6f0;
+  --text-color: #5c516d;
+
   --surface-color: #ffffff;
-  --text-color: #1e1e2f;
-  --primary-color: #1976d2;   /* Material Blue 700 */
-  --primary-light: #63a4ff;   /* Material Blue 300 */
-  --accent-color: #00bcd4;    /* Cyan 500 */
+  --primary-color: #1976d2;
+  /* Material Blue 700 */
+  --primary-light: #63a4ff;
+  /* Material Blue 300 */
+  --accent-color: #00bcd4;
+  /* Cyan 500 */
   --border-color: #e0e0e0;
 }
 
 /* Tema oscuro */
+/*
 .dark-theme {
   --bg-color: #222831;
   --surface-color: #161b22;
   --text-color: #e6edf3;
-  --primary-color: #3ea6ff;   /* Azure-like light blue */
+  --primary-color: #3ea6ff;  
   --primary-light: #90caf9;
   --accent-color: #00acc1;
   --border-color: #30363d;
 }
-
+*/
 
 body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
 button.mat-button {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-color);
 }
 
 a {
