@@ -1,20 +1,6 @@
-mat-toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2em; 
-
-}
-
 .toolbar-right {
   display: flex;
-  gap: 1.5em;
+  gap: 1.3em;
 }
 
 .toolbar-right button {
@@ -22,24 +8,18 @@ mat-toolbar {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;  
-  color: #5c516d;
+  font-family: 'Poppins', sans-serif;
+  color: inherit !important;
 
 }
 
 .cv-button {
-  border: 1px solid #b8adc7;  
-  color: #5c516d !important;
+  border: 1px solid #b8adc7;
+  color: inherit !important;
 }
 
 .cv-button:hover,
 .toolbar-right button:hover {
-  background-color: #fad8ef                   !important;
+  background-color: #fad8ef !important;
   box-shadow: 0 2px 4px rgba(152, 126, 178, 0.2);
-}
-
-.translucent {
-  background: rgba(236, 230, 240, 0.5);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(4px);    
 }

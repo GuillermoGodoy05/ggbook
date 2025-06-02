@@ -1,113 +1,189 @@
+/* --- Sección General de Proyectos --- */
 .project-wrapper {
-  padding: 2em;
+  padding: 6em 2em; /* Espacio generoso para la sección */
   text-align: center;
 }
 
 .project-title {
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 2em;
+  font-size: 1.8em; /* Título prominente */  
+  margin-bottom: 2.5em; /* Buen espacio para que respire */
 }
 
-/* Acomodar 2 columnas en pantallas grandes */
+/* --- Contenedor de Tarjetas (Grid de 2 Columnas) --- */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3em;
-  justify-items: center;
-  width: 70%;
+  grid-template-columns: repeat(2, 1fr); /* Vuelve a las 2 columnas fijas en escritorio */
+  gap: 2.5em; /* Espacio considerable entre las tarjetas */
+  max-width: 1100px; /* Ancho máximo consistente */
   margin: 0 auto;
-
+  padding: 0 1em;
+  
 }
 
-.project-card {
-  width: 100%;
-  height: 12em;
-  background-color: #f1eaf5;
-  border-radius: 12px;
+/* --- Tarjeta de Proyecto (mat-card) --- */
+.project-card {  
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra muy suave para elegancia */
+  border: 1px solid rgba(184, 173, 199, 0.15); /* Borde apenas perceptible */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  /*   transition: transform 0.2s ease-in-out; */
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em; /* Padding interno generoso */  
+  text-align: center; /* Contenido alineado a la izquierda */
 }
 
+.project-card:hover {
+  transform: translateY(-4px); /* Elevación sutil al pasar el cursor */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Sombra ligeramente más marcada */
+  border-color: rgba(152, 126, 178, 0.3); /* Borde un poco más visible */
+}
 
+/* --- Contenido de la Tarjeta --- */
 .card-content {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-
-.card-content span {
-  color: #5c4b79; 
-}
-
-.card-content p {
-  color: #c893f7   ;
-  font-size: 0.75em;
-}
-
-@media screen and (max-width: 768px) {
-  .project-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ---- Buttons ---- */
-
-
-.tech-tags {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin-top: 0.5em;
+  flex-direction: column;
+}
+
+.card-content > span:first-child { /* Nombre del proyecto */
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.2em;  
+}
+
+.card-content p { /* Descripción del proyecto */
+  font-size: 1em;
+  opacity: 0.85; /* Ligera opacidad para la descripción */
   margin-bottom: 1em;
 }
 
-.tech-tag {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #dcdcdc;
-  padding: 0.4em 0.4em 0.6em 0.4em;
-  font-size: 0.6em;
-  border-radius: 12px;
-  font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
+/* --- Etiquetas de Tecnología --- */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1.2em;
+  margin-bottom: 1.8em;
+  justify-content: center;
 }
 
+/* tener en cuenta bg para style */
+.tech-tag {
+  background-color: rgba(152, 126, 178, 0.08); /* Fondo muy sutil y translúcido */
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  border-radius: 6px; /* Bordes menos redondeados para formalidad */
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
 
-/* ---- Icons ---- */
+.tech-tag:hover {
+  background-color: rgba(152, 126, 178, 0.15); /* Un poco más de fondo al pasar el cursor */
+}
 
+/* --- Enlaces de Acciones de Proyecto --- */
 .projectsBt-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.projectsBt-item a,
-.projectsBt-item {
-  color: rgb(201, 195, 236);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.2em;
-  transition: transform 0.2s ease;
-}
-
-.projectsBt-item {
   gap: 1em;
+  margin-top: 0.5em;
+  justify-content: center;
+
+}
+
+.projectsBt-item {
+  display: contents; /* Evita que el div padre afecte el layout de los enlaces */
+}
+
+.projectsBt-item a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-weight: 500;
+  padding: 0.7em 1.2em;
+  border-radius: 8px;
+  border: 1px solid rgba(184, 173, 199, 0.4); /* Borde sutil, pero visible */
+  transition: all 0.3s ease;
 }
 
 .projectsBt-item a:hover {
-  transform: scale(1.1);
+  background-color: rgba(152, 126, 178, 0.05); /* Fondo muy suave al pasar el cursor */
+  color: var(--primary-color); /* Cambio sutil al color primario */
+  border-color: var(--primary-color); /* Borde cambia a primario */
+  transform: translateY(-2px); /* Muy ligera elevación */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra mínima */
 }
 
-mat-icon {
-  font-size: 1em;
+.projectsBt-item a mat-icon {
+  font-size: 1.2em; 
+  margin-top: 0.2em;
+  transition: color 0.3s ease;
+}
 
+.projectsBt-item a:hover mat-icon {
+  color: var(--primary-color);
+}
+
+
+/* --- Media Queries (Responsividad) --- */
+@media screen and (max-width: 992px) {
+  .project-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Más flexible para tablets */
+    gap: 3em;
+  }
+  .project-card {
+    padding: 2em;
+    min-height: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-wrapper {
+    padding: 4em 1em;
+  }
+  .project-title {
+    font-size: 2.6em;
+    margin-bottom: 2.8em;
+  }
+  .project-container {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    gap: 2.5em;
+    padding: 0 0.5em;
+  }
+  .project-card {
+    padding: 1.8em;
+  }
+  .card-content > span:first-child {
+    font-size: 1.5em;
+  }
+  .card-content p {
+    font-size: 0.9em;
+  }
+  .tech-tag {
+    font-size: 0.75em;
+    padding: 0.4em 0.8em;
+  }
+  .projectsBt-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+  }
+  .projectsBt-item a {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-title {
+    font-size: 2.2em;
+  }
+  .project-card {
+    padding: 1.5em;
+  }
+  .card-content > span:first-child {
+    font-size: 1.3em;
+  }
 }
