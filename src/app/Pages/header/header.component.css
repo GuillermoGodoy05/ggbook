@@ -1,10 +1,11 @@
 .toolbar-right {
   display: flex;
   gap: 1.3em;
+  padding-right: 0.8em;
 }
 
 .toolbar-right button {
-  font-size: 0.78em;
+  font-size: 0.78em !important;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -13,9 +14,14 @@
 
 }
 
+.button-container{
+  margin-left: 1em !important;
+}
+
 .cv-button {
   border: 1px solid #b8adc7;
   color: inherit !important;
+  font-size: 0.78em !important;
 }
 
 .cv-button:hover,

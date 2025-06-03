@@ -89,7 +89,6 @@ mat-toolbar {
   background-color: var(--bg-card-color);
 }
 
-
 /* Pseudo-elemento para animación de resplandor */
 .profile-photo-wrapper {
   position: relative;
@@ -111,8 +110,6 @@ mat-toolbar {
   position: relative;
   z-index: 20;
 }
-
-
 
 button .mat-button {
   background-color: var(--primary-color);
