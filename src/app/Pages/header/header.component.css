@@ -53,6 +53,7 @@
 .toggle-button i {
   font-size: 1.3em;
   margin-top: 0.1em;
+  border-radius: 20px;
 }
 
 .toggle-button:hover {
