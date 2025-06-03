@@ -57,27 +57,17 @@ export class ProjectsComponent {
 
     },
      {
-      name: 'API Sistema Ventas',
-      description: 'Api Sist Venta',
+      name: 'Kotlin Front App',
+      description: 'App about Christmas recipes',
 
-      tech: ['.Net', 'React'],
+      tech: ['Kotlin', 'Android Studio'], 
 
-      label2: 'Try',
-      icon2: 'computer',
-      link2: 'https://sistemaventasportfolio.netlify.app/',
+      label2: 'GitHub',
+      icon2: 'code',
+      link2: 'https://github.com/GuillermoGodoy05/GodoyGuillermoFinalTAP'        
 
-      label3: 'Back',
-      icon3: 'code',
-      link3: 'https://github.com/GuillermoGodoy05/BackendSistemaVenta',
-
-      labelOp: 'Front',
-      iconOp: 'brush',
-      linkOp: 'https://github.com/GuillermoGodoy05/FrontendSistemaVentas',
-
-
-    },
-    { name: 'React' },
-    { name: 'Kotlin' },
+    }
+   
 
   ];
 

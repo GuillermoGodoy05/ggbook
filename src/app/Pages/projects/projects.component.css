@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Vuelve a las 2 columnas fijas en escritorio */
   gap: 2.5em; /* Espacio considerable entre las tarjetas */
-  max-width: 1100px; /* Ancho máximo consistente */
+  width: 75%; /* Ancho máximo consistente */
   margin: 0 auto;
   padding: 0 1em;  
 }

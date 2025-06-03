@@ -13,23 +13,25 @@
 
         <div class="projectsBt-list">
           <div class="projectsBt-item">
-
-            <a [href]="proj.link2" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="proj.link2 && proj.label2 && proj.icon2" [href]="proj.link2" target="_blank"
+              rel="noopener noreferrer">
               <span>{{ proj.label2 }}</span>
               <mat-icon>{{ proj.icon2 }}</mat-icon>
             </a>
 
-            <a [href]="proj.link3" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="proj.link3 && proj.label3 && proj.icon3" [href]="proj.link3" target="_blank"
+              rel="noopener noreferrer">
               <span>{{ proj.label3 }}</span>
               <mat-icon>{{ proj.icon3 }}</mat-icon>
             </a>
 
-            <a *ngIf="proj.linkOp" [href]="proj.linkOp" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="proj.linkOp && proj.labelOp && proj.iconOp" [href]="proj.linkOp" target="_blank"
+              rel="noopener noreferrer">
               <span>{{ proj.labelOp }}</span>
               <mat-icon>{{ proj.iconOp }}</mat-icon>
             </a>
-
           </div>
+
         </div>
 
       </div>
