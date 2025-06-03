@@ -144,8 +144,10 @@
 @media (max-width: 768px) {
   .toolbar-right {
     justify-content: left;
-    width: 100%; /* que ocupe todo el ancho para poder centrar */
-    padding-right: 0px; /* sin padding a la derecha */
+    width: 100%;
+    /* que ocupe todo el ancho para poder centrar */
+    padding-right: 0px;
+    /* sin padding a la derecha */
     padding-left: 0.3em;
   }
 
@@ -157,8 +159,20 @@
     display: inline;
   }
 
+  .a-cv-button {
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 40px;
+  }
+
+  .a-cv-button:hover {
+    background-color: var(--bg-hover-color);    
+  }
+
+
   .bt-movil-hide {
     display: none;
+
   }
 
   .toolbar-movil {

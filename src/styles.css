@@ -2,9 +2,10 @@
 html,
 body {
   height: 100%;
-   margin: 0;
+  margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Opcional, evita desbordes horizontales */
+  overflow-x: hidden;
+  /* Opcional, evita desbordes horizontales */
 }
 
 a {
