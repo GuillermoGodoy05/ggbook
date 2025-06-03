@@ -163,6 +163,7 @@
     text-decoration: none;
     color: var(--text-color);
     border-radius: 40px;
+    background-color: none;
   }
 
   .a-cv-button:hover {
@@ -175,7 +176,8 @@
 
   .toggle-button {
     border-radius: 40px;
-    background: none;
+    background-color: none;
+    
   }
 
 
@@ -185,7 +187,7 @@
 
   .toolbar-movil {
     display: flex;
-    gap: 0.3em;
+    gap: 0.01em;
     padding-right: 0.8em;
     padding-top: 0.1em;
   }
