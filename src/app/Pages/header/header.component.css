@@ -101,11 +101,7 @@
     /* Ajusta el padding para el botón CV */
   }
 
-  .toolbar-right {
-    /* Ocultar los botones de navegación para móviles */
-    display: none;
-    /* IMPORTANTE: Considera implementar un menú de hamburguesa aquí para que el usuario pueda acceder a estos enlaces. */
-  }
+
 
 
 }
@@ -146,64 +142,23 @@
   }
 }
 
-/* Ocultar toolbar-right en móvil */
+/* Ocultar botones toolbar-right en móvil */
 @media (max-width: 768px) {
 
-  /* Toolbar móvil */
-  mat-toolbar {
-    height: 56px;
-    padding: 0 8px;
-  }
-
   /* Botones de navegación ocultos en móvil */
-  .toolbar-right {
-    display: none;
-  }
-
-  /* Botón hamburguesa visible en móvil */
-  .mobile-menu-button {
-    display: inline-flex;
-  }
-
-  .mobile-sidenav-container {
-    /* no tocar height ni width por defecto */
-    position: relative;
-    z-index: auto;
-    pointer-events: none;
-    /* No bloquea clics cuando cerrado */
-  }
-
-  .mobile-sidenav-container.menu-open {
-    position: fixed;
-    min-height: 30vh;
-    width: 25vw;
-    z-index: 1000;
-    pointer-events: auto;
-    /* Solo ahora sí se activa */
-  }
-
-  .mobile-sidenav-container mat-sidenav {
-    background-color: var(--bg-color);
-
-    pointer-events: auto;
-    /* blanco casi transparente */
-    backdrop-filter: blur(6px);
-    /* desenfoque suave */
-    -webkit-backdrop-filter: blur(6px);
-    /* para Safari */
-    box-shadow: none;
-    /* elimina sombra si no la querés */
-    border-right: 1px solid rgba(240, 206, 206, 0.1);
-    /* opcional, línea divisoria sutil */
+  .bt-movil-hide {
+    display: none;    
   }
 
   .toolbar-movil {
     display: flex;
-    gap: 0.4em;
-    padding-right: 0.5em;
-    padding-top: 0.2em;
+    gap: 0.5em;
+    padding-right: 1.5em;
+    padding-top: 0.2em;   
+    
   }
 
+ 
   .cv-button-movil {
     display: inline;
   }

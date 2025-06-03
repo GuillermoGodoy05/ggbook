@@ -1,7 +1,4 @@
 <mat-toolbar class="translucent">
-  <button mat-icon-button (click)="toggleSidenav()" class="mobile-menu-button">
-    <mat-icon>menu</mat-icon>
-  </button>
 
   <!-- Botón de CV siempre visible -->
   <button mat-button id="cv-button" class="cv-button">CV</button>
@@ -10,8 +7,8 @@
   <div class="toolbar-right">
     <button mat-button (click)="onClick('home')">Home</button>
     <button mat-button (click)="onClick('projects')">Projects</button>
-    <button mat-button (click)="onClick('experience')">Experience</button>
-    <button mat-button (click)="onClick('about')">About Me</button>
+    <button mat-button class="bt-movil-hide" (click)="onClick('experience')">Experience</button>
+    <button mat-button class="bt-movil-hide" (click)="onClick('about')">About Me</button>
     <button mat-button (click)="onClick('contact')">Contact</button>
   </div>
 
@@ -23,15 +20,3 @@
   </div>
 </mat-toolbar>
 
-<!-- Contenedor del menú lateral (visible solo en móvil) -->
-<mat-sidenav-container class="mobile-sidenav-container" #sidenavContainer>
-  <mat-sidenav #sidenav class="mobile-sidenav" mode="over" opened>
-    <mat-nav-list>
-      <a mat-list-item (click)="onClick('home'); sidenav.close()">Home</a>
-      <a mat-list-item (click)="onClick('projects'); sidenav.close()">Projects</a>
-      <a mat-list-item (click)="onClick('experience'); sidenav.close()">Experience</a>
-      <a mat-list-item (click)="onClick('about'); sidenav.close()">About Me</a>
-      <a mat-list-item (click)="onClick('contact'); sidenav.close()">Contact</a>
-    </mat-nav-list>
-  </mat-sidenav>
-</mat-sidenav-container>
