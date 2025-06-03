@@ -173,6 +173,11 @@
     border-radius: 40px;
   }
 
+  .toggle-button {
+    border-radius: 40px;
+    background: none;
+  }
+
 
   .bt-movil-hide {
     display: none;
@@ -180,7 +185,7 @@
 
   .toolbar-movil {
     display: flex;
-    gap: 0.6em;
+    gap: 0.3em;
     padding-right: 0.8em;
     padding-top: 0.1em;
   }
