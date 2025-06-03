@@ -47,7 +47,7 @@
   background: none;
   cursor: pointer;
   margin-right: 1em;
-
+  border-radius: 20px;
 }
 
 .toggle-button i {
@@ -167,7 +167,7 @@
   }
 
   .a-cv-button:hover {
-    background-color: var(--bg-hover-color);    
+    background-color: var(--bg-hover-color);
   }
 
 
