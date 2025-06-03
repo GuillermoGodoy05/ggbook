@@ -31,6 +31,13 @@ export class HeaderComponent {
     this.scrollToSection.emit(sectionId);
   }
 
+  scrollTo(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   // Cambia entre modo oscuro y claro agregando/removiendo clases al <body>
   toggleDarkMode(): void {
     this.isDarkMode = !this.isDarkMode;
