@@ -23,7 +23,6 @@ mat-toolbar {
   border: none;
   cursor: pointer;
   color: inherit !important;
-  position: relative;
   z-index: 1001;
 }
 
