@@ -1,7 +1,7 @@
 .toolbar-right {
   display: flex;
   gap: 1.2em;
-  padding-right: 1.1em;
+  padding-right: 0.5em;
 }
 
 .toolbar-right button {
@@ -14,8 +14,9 @@
 
 }
 
-.button-container{
+.button-container {
   margin-left: 1em !important;
+
 }
 
 .cv-button {
@@ -24,12 +25,197 @@
   font-size: 0.78em !important;
 }
 
+.cv-button-movil {
+  color: inherit !important;
+  font-size: 0.78em !important;
+  display: none;
+}
+
 .cv-button:hover,
 .toolbar-right button:hover {
   background-color: var(--bg-hover-color);
 }
 
 
-.toggle-button:hover{
+.toggle-button {
   border-radius: 20px;
+  border: none;
+  color: inherit !important;
+  font-size: 0.78em !important;
+  background: none;
+  cursor: pointer;
+  margin-right: 1em;
+
+}
+
+.toggle-button i {
+  font-size: 1.3em;
+  margin-top: 0.1em;
+}
+
+.toggle-button:hover {
+  background-color: inherit;
+
+  border-radius: 20px;
+}
+
+/* Menu hamburguesa */
+
+/* Toolbar layout */
+.toolbar-right {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/* Oculta los botones del menú de navegación en pantallas chicas */
+.toolbar-right {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Botón del menú hamburguesa solo en móviles */
+.mobile-menu-button {
+  display: none;
+}
+
+
+
+/* --- Media Queries para la Toolbar --- */
+
+/* Para pantallas pequeñas (smartphones, hasta 768px de ancho) */
+@media (max-width: 768px) {
+  mat-toolbar {
+    height: 56px;
+    /* Ajusta la altura de la toolbar */
+    padding: 0 8px;
+    /* Reduce el padding lateral */
+  }
+
+  .cv-button {
+    font-size: 14px;
+    /* Un poco más pequeño si es necesario */
+    padding: 0 12px;
+    /* Ajusta el padding para el botón CV */
+  }
+
+  .toolbar-right {
+    /* Ocultar los botones de navegación para móviles */
+    display: none;
+    /* IMPORTANTE: Considera implementar un menú de hamburguesa aquí para que el usuario pueda acceder a estos enlaces. */
+  }
+
+
+}
+
+/* Para tablets o pantallas medianas (entre 769px y 1024px de ancho) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  mat-toolbar {
+    padding: 0 24px;
+    /* Un poco más de padding lateral */
+  }
+
+  .toolbar-right {
+    gap: 12px;
+    /* Espacio entre los botones de navegación */
+  }
+
+  .toolbar-right button.mat-button {
+    font-size: 15px;
+    /* Ajusta el tamaño de la fuente de los botones */
+  }
+}
+
+/* Para pantallas grandes (desktops, a partir de 1025px de ancho) */
+@media (min-width: 1025px) {
+  mat-toolbar {
+    padding: 0 32px;
+    /* Más padding lateral para pantallas grandes */
+  }
+
+  .toolbar-right {
+    gap: 16px;
+    /* Más espacio entre los botones */
+  }
+
+  .toolbar-right button.mat-button {
+    font-size: 16px;
+    /* Ajusta el tamaño de la fuente de los botones */
+  }
+}
+
+/* Ocultar toolbar-right en móvil */
+@media (max-width: 768px) {
+
+  /* Toolbar móvil */
+  mat-toolbar {
+    height: 56px;
+    padding: 0 8px;
+  }
+
+  /* Botones de navegación ocultos en móvil */
+  .toolbar-right {
+    display: none;
+  }
+
+  /* Botón hamburguesa visible en móvil */
+  .mobile-menu-button {
+    display: inline-flex;
+  }
+
+  .mobile-sidenav-container {
+    /* no tocar height ni width por defecto */
+    position: relative;
+    z-index: auto;
+    pointer-events: none;
+    /* No bloquea clics cuando cerrado */
+  }
+
+  .mobile-sidenav-container.menu-open {
+    position: fixed;
+    min-height: 30vh;
+    width: 25vw;
+    z-index: 1000;
+    pointer-events: auto;
+    /* Solo ahora sí se activa */
+  }
+
+  .mobile-sidenav-container mat-sidenav {
+    background-color: var(--bg-color);
+
+    pointer-events: auto;
+    /* blanco casi transparente */
+    backdrop-filter: blur(6px);
+    /* desenfoque suave */
+    -webkit-backdrop-filter: blur(6px);
+    /* para Safari */
+    box-shadow: none;
+    /* elimina sombra si no la querés */
+    border-right: 1px solid rgba(240, 206, 206, 0.1);
+    /* opcional, línea divisoria sutil */
+  }
+
+  .toolbar-movil {
+    display: flex;
+    gap: 0.4em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+  }
+
+  .cv-button-movil {
+    display: inline;
+  }
+
+  .cv-button {
+    display: none;
+  }
+}
+
+/* Mostrar correctamente el menú en tablets y desktop */
+@media (min-width: 769px) {
+  .mobile-sidenav-container {
+    display: none;
+  }
 }
