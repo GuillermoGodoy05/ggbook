@@ -1,49 +1,66 @@
 .contact-container {
-    text-align: center;
-    padding: 1em;
-    padding-bottom: 3em;
-    margin: auto;
-    margin-top: 4em;
-    margin-bottom: 3em;
-    width: 60%;
-    border-radius: 10px;
-    border-top: 2px solid rgba(181, 174, 223, 0.4);
-    border-bottom: 2px solid rgba(181, 174, 223, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  padding: 2em 1em 3em;
+  margin: 4em auto 3em;
+  width: 60%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-container h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  font-weight: 600;
 }
 
-/* Diseño horizontal */
 .contact-list {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    
-    /* para que se acomode si hay muchos */
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 
-.contact-item a,
-.contact-item .email-display {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    transition: transform 0.2s ease;
-    color: inherit;
-}
-.contact-item .email-display {
-   color: #5c516d;
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-item a:hover {
-    transform: scale(1.1);
+.contact-link,
+.email-display {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+
+.email-display {
+  color: #5c516d;
 }
 
 mat-icon {
-    font-size: 1.5em;
+  font-size: 1.6em;
+}
+
+.contact-label {
+  white-space: nowrap;
+}
+
+/* Gracias por pasar */
+.thank-you-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.thank-you-message p {
+  font-size: 1rem;
+  opacity: 0.9;
 }

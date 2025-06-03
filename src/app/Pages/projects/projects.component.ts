@@ -56,6 +56,26 @@ export class ProjectsComponent {
 
 
     },
+     {
+      name: 'API Sistema Ventas',
+      description: 'Api Sist Venta',
+
+      tech: ['.Net', 'React'],
+
+      label2: 'Try',
+      icon2: 'computer',
+      link2: 'https://sistemaventasportfolio.netlify.app/',
+
+      label3: 'Back',
+      icon3: 'code',
+      link3: 'https://github.com/GuillermoGodoy05/BackendSistemaVenta',
+
+      labelOp: 'Front',
+      iconOp: 'brush',
+      linkOp: 'https://github.com/GuillermoGodoy05/FrontendSistemaVentas',
+
+
+    },
     { name: 'React' },
     { name: 'Kotlin' },
 

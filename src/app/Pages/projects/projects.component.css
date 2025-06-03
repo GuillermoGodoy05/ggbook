@@ -1,6 +1,6 @@
 /* --- Sección General de Proyectos --- */
 .project-wrapper {
-  padding: 6em 2em; /* Espacio generoso para la sección */
+  padding: 2em 2em; /* Espacio generoso para la sección */
   text-align: center;
 }
 
@@ -16,8 +16,7 @@
   gap: 2.5em; /* Espacio considerable entre las tarjetas */
   max-width: 1100px; /* Ancho máximo consistente */
   margin: 0 auto;
-  padding: 0 1em;
-  
+  padding: 0 1em;  
 }
 
 /* --- Tarjeta de Proyecto (mat-card) --- */
@@ -36,7 +35,7 @@
 .project-card:hover {
   transform: translateY(-4px); /* Elevación sutil al pasar el cursor */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Sombra ligeramente más marcada */
-  border-color: rgba(152, 126, 178, 0.3); /* Borde un poco más visible */
+ border: 1px solid var(--primary-color); /* Borde un poco más visible */
 }
 
 /* --- Contenido de la Tarjeta --- */

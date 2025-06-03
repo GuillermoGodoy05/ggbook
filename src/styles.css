@@ -15,7 +15,8 @@ a {
   --bg-color-card: #f1eaf5;
   --text-color: #5c516d;
   --text-color-toolbar: #77688d;
-  --accent-color: #c782bb;
+  --accent-color: #5a3554;
+  --bg-card-color: #f7f2fa;
 
 
   /* de las etiquetas a */
@@ -25,7 +26,6 @@ a {
   --bg-color-b: 240;
 
 
-  --surface-color: #ffffff;
   --primary-color: #1976d2;
   /* Material Blue 700 */
   /* Material Blue 300 */
@@ -75,12 +75,19 @@ mat-toolbar {
   color: var(--text-color-toolbar) !important;
 }
 
+.tech-card{
+  background-color: var(--bg-card-color);
+}
+
 /* Project component */
 .project-card {
-  background-color: var(--bg-color-card) !important;
+  background-color: var(--bg-card-color) !important;
   /* color: red !important; */
 }
 
+.experience-container {
+  background-color: var(--bg-card-color);
+}
 
 
 /* Pseudo-elemento para animación de resplandor */

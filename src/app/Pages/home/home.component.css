@@ -48,7 +48,6 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin: 12px 0 1px;
-
 }
 
 .profile-header span {
@@ -91,8 +90,8 @@
 .tech-card {
   padding: 14px 28px;
   /* Padding más generoso */
-  background-color: var(--surface-color, #ffffff);
-  /* Usa el color de superficie del tema */
+ 
+ 
   color: var(--text-color);
   /* Usa el color de texto del tema */
   border-radius: 10px;
@@ -116,7 +115,7 @@
   /* Sombra que se intensifica */
   background-color: rgba(152, 126, 178, 0.05);
   /* Fondo muy sutilmente diferente al hover */
-  border-color: rgba(152, 126, 178, 0.3);
+  border-color: #1976d2;
   /* Borde un poco más visible */
 }
 
