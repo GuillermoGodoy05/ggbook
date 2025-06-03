@@ -1,7 +1,11 @@
 <mat-toolbar class="translucent">
-
-  <a href="/CV-GodoyGuillermo.pdf" download="Mi-Curriculum-Vitae.pdf">
-    <button mat-button id="cv-button" class="cv-button">CV</button>
+  <a
+    href="/CV-GodoyGuillermo.pdf"
+    download="Mi-Curriculum-Vitae.pdf"
+    class="cv-button"
+    id="cv-button"
+  >
+    CV
   </a>
 
   <div class="toolbar-right">
@@ -13,8 +17,13 @@
   </div>
 
   <div class="toolbar-movil">
-    <a class="a-cv-button" href="/CV-GodoyGuillermo.pdf" download="Mi-Curriculum-Vitae.pdf">
-      <button mat-button id="cv-button-mv" class="cv-button-movil">CV</button>
+    <a
+      class="cv-button-movil a-cv-button"
+      href="/CV-GodoyGuillermo.pdf"
+      download="Mi-Curriculum-Vitae.pdf"
+      id="cv-button-mv"
+    >
+      CV
     </a>
     <button class="toggle-button" (click)="toggleDarkMode()">
       <i class="fa-solid fa-palette"></i>
