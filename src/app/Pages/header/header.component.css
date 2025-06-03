@@ -92,7 +92,7 @@
   mat-toolbar {
     height: 56px;
     /* Ajusta la altura de la toolbar */
-    padding: 0 8px;
+    padding: 0 16px;
     /* Reduce el padding lateral */
   }
 
@@ -178,9 +178,9 @@
 
   .toolbar-movil {
     display: flex;
-    gap: 0.5em;
+    gap: 0.4em;
     padding-right: 0.3em;
-    padding-top: 0.2em;
+    padding-top: 0.1em;
   }
 }
 
