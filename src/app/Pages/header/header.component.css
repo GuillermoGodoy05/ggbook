@@ -149,7 +149,6 @@
     /* que ocupe todo el ancho para poder centrar */
     padding-right: 0px;
     /* sin padding a la derecha */
-    padding-left: 0.3em;
   }
 
   .cv-button {
@@ -171,7 +170,6 @@
     border-radius: 40px;
   }
   .toggle-button:hover {
-    background-color: var(--bg-hover-color);
     border-radius: 40px;
   }
 
@@ -182,8 +180,8 @@
 
   .toolbar-movil {
     display: flex;
-    gap: 0.4em;
-    padding-right: 0.3em;
+    gap: 0.6em;
+    padding-right: 0.8em;
     padding-top: 0.1em;
   }
 }
