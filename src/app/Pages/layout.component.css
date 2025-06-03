@@ -1,6 +1,3 @@
-
-/* 
-@media (max-width: 768px) {
-  
-
-} */
+#home, #projects, #experience, #about, #contact {
+  scroll-margin-top: 100px; /* Asegúrate de que este valor sea mayor o igual a la altura de tu toolbar */
+}

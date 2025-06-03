@@ -176,10 +176,8 @@
 
   .toggle-button {
     border-radius: 40px;
-    background-color: none;
-    
+    background-color: none;    
   }
-
 
   .bt-movil-hide {
     display: none;
