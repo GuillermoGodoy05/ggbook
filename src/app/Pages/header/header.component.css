@@ -1,23 +1,35 @@
+/* === Header fijo (toolbar fija arriba) === */
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* === Toolbar layout general === */
 .toolbar-right {
   display: flex;
   gap: 1.2em;
   padding-right: 0.5em;
+  margin-left: auto;
+  pointer-events: auto;
+  z-index: 1001;
 }
-
 
 .toolbar-right button {
   font-size: 0.78em !important;
   background: transparent;
   border: none;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
   color: inherit !important;
-
+  position: relative;
+  z-index: 1001;
 }
 
 .button-container {
   margin-left: 1em !important;
-
 }
 
 .cv-button {
@@ -38,7 +50,6 @@
   background-color: var(--bg-hover-color);
 }
 
-
 .toggle-button {
   border-radius: 20px;
   border: none;
@@ -47,7 +58,8 @@
   background: none;
   cursor: pointer;
   margin-right: 1em;
-  border-radius: 20px;
+  position: relative;
+  z-index: 1001;
 }
 
 .toggle-button i {
@@ -61,94 +73,18 @@
   border-radius: 20px;
 }
 
-/* Menu hamburguesa */
-
-/* Toolbar layout */
-.toolbar-right {
-  margin-left: auto;
-  display: flex;
-  gap: 0.5rem;
-}
-
-
-/* Oculta los botones del menú de navegación en pantallas chicas */
-.toolbar-right {
-  margin-left: auto;
-  display: flex;
-  gap: 0.5rem;
-}
-
-/* Botón del menú hamburguesa solo en móviles */
+/* Menú hamburguesa (solo móviles) */
 .mobile-menu-button {
   display: none;
 }
 
+/* === Media Queries === */
 
-
-/* --- Media Queries para la Toolbar --- */
-
-/* Para pantallas pequeñas (smartphones, hasta 768px de ancho) */
+/* Smartphones (hasta 768px) */
 @media (max-width: 768px) {
   mat-toolbar {
     height: 56px;
-    /* Ajusta la altura de la toolbar */
     padding: 0 16px;
-    /* Reduce el padding lateral */
-  }
-
-  .cv-button {
-    font-size: 14px;
-    /* Un poco más pequeño si es necesario */
-    padding: 0 12px;
-    /* Ajusta el padding para el botón CV */
-  }
-
-}
-
-/* Para tablets o pantallas medianas (entre 769px y 1024px de ancho) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  mat-toolbar {
-    padding: 0 24px;
-    /* Un poco más de padding lateral */
-  }
-
-  .toolbar-right {
-    gap: 12px;
-    /* Espacio entre los botones de navegación */
-  }
-
-  .toolbar-right button.mat-button {
-    font-size: 15px;
-    /* Ajusta el tamaño de la fuente de los botones */
-  }
-}
-
-/* Para pantallas grandes (desktops, a partir de 1025px de ancho) */
-@media (min-width: 1025px) {
-  mat-toolbar {
-    padding: 0 32px;
-    /* Más padding lateral para pantallas grandes */
-  }
-
-  .toolbar-right {
-    gap: 16px;
-    /* Más espacio entre los botones */
-  }
-
-  .toolbar-right button.mat-button {
-    font-size: 16px;
-    /* Ajusta el tamaño de la fuente de los botones */
-  }
-}
-
-/* Ocultar botones toolbar-right en móvil */
-@media (max-width: 768px) {
-  .toolbar-right {
-    justify-content: left;
-    width: 100%;
-    /* que ocupe todo el ancho para poder centrar */
-    padding-right: 0px;
-    /* sin padding a la derecha */
   }
 
   .cv-button {
@@ -170,13 +106,17 @@
     background-color: var(--bg-hover-color);
     border-radius: 40px;
   }
-  .toggle-button:hover {
-    border-radius: 40px;
+
+  .toolbar-right {
+    justify-content: left;
+    width: 100%;
+    padding-right: 0;
+    gap: 0.5rem;
   }
 
-  .toggle-button {
+  .toggle-button,
+  .toggle-button:hover {
     border-radius: 40px;
-    background-color: none;    
   }
 
   .bt-movil-hide {
@@ -191,10 +131,32 @@
   }
 }
 
+/* Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  mat-toolbar {
+    padding: 0 24px;
+  }
 
-/* Mostrar correctamente el menú en tablets y desktop */
-@media (min-width: 769px) {
-  .mobile-sidenav-container {
-    display: none;
+  .toolbar-right {
+    gap: 12px;
+  }
+
+  .toolbar-right button.mat-button {
+    font-size: 15px;
+  }
+}
+
+/* Desktops (1025px en adelante) */
+@media (min-width: 1025px) {
+  mat-toolbar {
+    padding: 0 32px;
+  }
+
+  .toolbar-right {
+    gap: 16px;
+  }
+
+  .toolbar-right button.mat-button {
+    font-size: 16px;
   }
 }
