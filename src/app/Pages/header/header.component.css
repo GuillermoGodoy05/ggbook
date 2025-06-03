@@ -168,12 +168,16 @@
 
   .a-cv-button:hover {
     background-color: var(--bg-hover-color);
+    border-radius: 40px;
+  }
+  .toggle-button:hover {
+    background-color: var(--bg-hover-color);
+    border-radius: 40px;
   }
 
 
   .bt-movil-hide {
     display: none;
-
   }
 
   .toolbar-movil {
