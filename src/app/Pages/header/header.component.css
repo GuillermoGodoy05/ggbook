@@ -20,7 +20,6 @@ mat-toolbar {
 
 .toolbar-right button {
   font-size: 0.78em !important;
-  background: transparent;
   border: none;
   cursor: pointer;
   color: inherit !important;
@@ -82,10 +81,7 @@ mat-toolbar {
 
 /* Smartphones (hasta 768px) */
 @media (max-width: 768px) {
-  mat-toolbar {
-    height: 56px;
-    padding: 0 16px;
-  }
+ 
 
   .cv-button {
     display: none;
