@@ -1,7 +1,7 @@
 .toolbar-right {
   display: flex;
-  gap: 1.3em;
-  padding-right: 0.8em;
+  gap: 1.2em;
+  padding-right: 1.1em;
 }
 
 .toolbar-right button {
@@ -26,6 +26,10 @@
 
 .cv-button:hover,
 .toolbar-right button:hover {
-  background-color: #fad8ef !important;
-  box-shadow: 0 2px 4px rgba(152, 126, 178, 0.2);
+  background-color: var(--bg-hover-color);
+}
+
+
+.toggle-button:hover{
+  border-radius: 20px;
 }

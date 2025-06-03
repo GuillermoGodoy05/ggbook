@@ -42,15 +42,20 @@
 }
 
 .email-display {
-  color: #5c516d;
+  color: #5c516d Imp !important;
 }
 
 mat-icon {
   font-size: 1.6em;
+
 }
 
 .contact-label {
   white-space: nowrap;
+}
+
+.contact-link:hover{
+    color: var(--primary-color);
 }
 
 /* Gracias por pasar */

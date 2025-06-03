@@ -8,6 +8,7 @@ a {
   color: var(--accent-color);
 }
 
+
 /* Tema claro */
 .light-theme {
 
@@ -16,7 +17,7 @@ a {
   --text-color: #5c516d;
   --text-color-toolbar: #77688d;
   --accent-color: #5a3554;
-  --bg-card-color: #f7f2fa;
+  --bg-hover-color: #f1ddfc;
 
 
   /* de las etiquetas a */
@@ -35,21 +36,24 @@ a {
 
 
 /* Tema oscuro */
-/*
 .dark-theme {
-  --bg-color: #ece6f0;
-  --text-color: #5c516d;
+  --bg-color: #121218;
+  --bg-color-card: #1d1d26;
+  --text-color: #c2b7df;
+  --text-color-toolbar: #c2b7df;
+  --accent-color: #90caf9;
+  --bg-hover-color: #2b2b3b;
 
-  --bg-color-r: 236;
-  --bg-color-g: 230;
-  --bg-color-b: 240;
 
-  --primary-color: #3ea6ff;  
-  --primary-light: #90caf9;
-  --accent-color: #00acc1;
-  --border-color: #30363d;
+  --bg-color-r: 18;
+  --bg-color-g: 18;
+  --bg-color-b: 24;
+
+  --primary-color: #3ea6ff;
+  --border-color: #3a3844;
+  --bg-card-color: #1a1a22;
+
 }
-*/
 
 body {
   margin: 0;
@@ -75,18 +79,18 @@ mat-toolbar {
   color: var(--text-color-toolbar) !important;
 }
 
-.tech-card{
-  background-color: var(--bg-card-color);
+.tech-card {
+  background-color: var(--bg-color-card);
 }
 
 /* Project component */
 .project-card {
-  background-color: var(--bg-card-color) !important;
+  background-color: var(--bg-color-card) !important;
   /* color: red !important; */
 }
 
 .experience-container {
-  background-color: var(--bg-card-color);
+  background-color: var(--bg-color-card);
 }
 
 /* Pseudo-elemento para animación de resplandor */
