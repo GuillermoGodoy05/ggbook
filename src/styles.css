@@ -96,15 +96,6 @@ mat-toolbar {
   background-color: var(--bg-color-card);
 }
 
-/* Pseudo-elemento para animación de resplandor */
-.profile-photo-wrapper {
-  position: relative;
-  width: 280px;
-  height: 275px;
-  border-radius: 50px;
-  display: inline-block;
-  z-index: 10;
-}
 
 .profile-photo {
   width: 100%;

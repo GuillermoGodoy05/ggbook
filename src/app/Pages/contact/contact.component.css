@@ -69,3 +69,45 @@ mat-icon {
   font-size: 1rem;
   opacity: 0.9;
 }
+
+/* Para tablets y móviles medianos */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 0.5em 1em;
+  }
+
+  .contact-list {
+    flex-direction: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .contact-link,
+  .email-display {
+    font-size: 1.1em;
+  }
+
+  .thank-you-message {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Para móviles pequeños */
+@media screen and (max-width: 480px) {
+  .contact-container {
+    padding: 1.5em 1em;
+  }
+
+  .contact-link,
+  .email-display {
+    font-size: 1em;
+    gap: 0.5em;
+  }
+
+  .thank-you-message {
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}

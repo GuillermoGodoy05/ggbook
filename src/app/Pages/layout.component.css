@@ -1,23 +1,6 @@
-.scroll-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 1001;
-}
 
-
-.translucent-bt {
-  background: rgba(255, 255, 255, 0.4);
-  /* Blanco más transparente */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #5c516d;
-}
-
+/* 
 @media (max-width: 768px) {
-  .scroll-top {
-    display: none;
-  }
+  
 
-}
+} */

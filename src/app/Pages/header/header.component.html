@@ -1,9 +1,9 @@
 <mat-toolbar class="translucent">
 
-  <!-- Botón de CV siempre visible -->
-  <button mat-button id="cv-button" class="cv-button">CV</button>
+  <a href="/CV-GodoyGuillermo.pdf" download="Mi-Curriculum-Vitae.pdf">
+    <button mat-button id="cv-button" class="cv-button">CV</button>
+  </a>
 
-  <!-- Botones de navegación solo visibles en escritorio -->
   <div class="toolbar-right">
     <button mat-button (click)="onClick('home')">Home</button>
     <button mat-button (click)="onClick('projects')">Projects</button>
@@ -13,10 +13,11 @@
   </div>
 
   <div class="toolbar-movil">
-    <button mat-button id="cv-button-mv" class="cv-button-movil">CV</button>
+    <a href="/CV-GodoyGuillermo.pdf" download="Mi-Curriculum-Vitae.pdf">
+      <button mat-button id="cv-button-mv" class="cv-button-movil">CV</button>
+    </a>
     <button class="toggle-button" (click)="toggleDarkMode()">
       <i class="fa-solid fa-palette"></i>
     </button>
   </div>
 </mat-toolbar>
-

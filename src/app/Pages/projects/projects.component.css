@@ -165,63 +165,91 @@
   }
 }
 
+/* --- Dispositivos móviles hasta 768px --- */
 @media screen and (max-width: 768px) {
   .project-wrapper {
-    padding: 4em 1em;
+    padding: 1em;
   }
 
   .project-title {
-    font-size: 2.6em;
-    margin-bottom: 2.8em;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+
   }
 
   .project-container {
-    grid-template-columns: 1fr;
-    /* Una columna en móviles */
-    gap: 2.5em;
-    padding: 0 0.5em;
+    width: 75%;
+    gap: 2em;
+    padding: 0;
   }
 
   .project-card {
-    padding: 1.8em;
+    padding: 1em;
+    border-radius: 0.8em;
   }
 
   .card-content>span:first-child {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .card-content p {
-    font-size: 0.9em;
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+  }
+
+  .tech-tags {
+    gap: 0.6em;
+    flex-wrap: wrap;
   }
 
   .tech-tag {
-    font-size: 0.75em;
-    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+    padding: 0.4em 0.7em;
   }
 
   .projectsBt-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8em;
+    display: flex;
+    align-items: stretch;
+    gap: 0.6em;
+    margin-top: 0.5em;
   }
 
   .projectsBt-item a {
-    width: 100%;
-    justify-content: center;
-    font-size: 0.9em;
+    width: fit-content;
+    align-self: center;
+    padding: 0.6em 1em;
+    font-size: 0.85em;
   }
 }
 
+/* --- Pantallas pequeñas hasta 480px --- */
 @media screen and (max-width: 480px) {
   .project-title {
-    font-size: 2.2em;
+    font-size: 1.6em;
+    margin-bottom: 1.5em;
   }
 
   .project-card {
-    padding: 1.5em;
+    padding: 0.9em;
   }
 
   .card-content>span:first-child {
     font-size: 1.3em;
+  }
+
+  .card-content p {
+    font-size: 0.95em;
+  }
+
+  .tech-tag {
+    font-size: 0.7em;
+    padding: 0.3em 0.6em;
+  }
+
+  .projectsBt-item a {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em;
   }
 }
