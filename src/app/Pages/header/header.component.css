@@ -3,15 +3,15 @@ mat-toolbar {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;  
-  width: 97%;
+  right: 0;
+  width: 98%;
 }
 
 /* === Toolbar layout general === */
 .toolbar-right {
   display: flex;
   gap: 1.2em;
- 
+
   margin-left: auto;
   pointer-events: auto;
   z-index: 1001;
@@ -78,7 +78,7 @@ mat-toolbar {
 @media (min-width: 1025px) {
   mat-toolbar {
     padding: 0 32px;
-    
+    width: 96%;
   }
 
   .toolbar-right {
@@ -95,7 +95,7 @@ mat-toolbar {
 @media (min-width: 769px) and (max-width: 1024px) {
   mat-toolbar {
     padding: 0 24px;
-    
+
   }
 
   .toolbar-right {
@@ -110,9 +110,9 @@ mat-toolbar {
 
 /* Smartphones (hasta 768px) */
 @media (max-width: 768px) {
- 
-  mat-toolbar{
-      width: 73%;
+
+  mat-toolbar {
+    width: 96%;
   }
 
   .cv-button {
