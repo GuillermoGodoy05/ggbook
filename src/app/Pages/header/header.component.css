@@ -1,7 +1,7 @@
 /* === Header fijo (toolbar fija arriba) === */
 mat-toolbar {
   position: fixed;
-  width: 98%;  
+  width: 98%;
   z-index: 1000;
   height: 70px;
 
@@ -12,7 +12,7 @@ mat-toolbar {
   background: rgba(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b), 0.5) !important;
   backdrop-filter: blur(4px);
   /* Mantén tu efecto de desenfoque */
-  
+
   color: var(--text-color-toolbar) !important;
 }
 
@@ -102,7 +102,7 @@ mat-toolbar {
 @media (min-width: 769px) and (max-width: 1024px) {
   mat-toolbar {
     padding: 0 24px;
-  }  
+  }
 
   .toolbar-right button.mat-button {
     font-size: 15px;
@@ -115,6 +115,9 @@ mat-toolbar {
 
   mat-toolbar {
     width: 96%;
+    position: relative;
+    z-index: 1001;
+    pointer-events: auto;
   }
 
   .cv-button {
@@ -154,7 +157,26 @@ mat-toolbar {
 
   .toolbar-movil {
     display: flex;
-    gap: 0.01em;    
+    gap: 0.01em;
     padding-top: 0.1em;
   }
+
+  button:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  button:focus-visible {
+    outline: none;
+  }
+
+  .toolbar-right button:hover,
+  .cv-button:hover {
+    background-color: transparent;
+  }
+
+  .a-cv-button:hover {
+    background-color: transparent;
+  }
+
 }
