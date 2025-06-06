@@ -1,10 +1,19 @@
 /* === Header fijo (toolbar fija arriba) === */
 mat-toolbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 98%;
+  width: 98%;  
+  z-index: 1000;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b), 0.5) !important;
+  backdrop-filter: blur(4px);
+  /* Mantén tu efecto de desenfoque */
+  
+  color: var(--text-color-toolbar) !important;
 }
 
 /* === Toolbar layout general === */
@@ -136,7 +145,6 @@ mat-toolbar {
 
   .toolbar-right {
     justify-content: left;
-    width: 100%;
     padding-right: 0;
     gap: 0.2rem;
   }
