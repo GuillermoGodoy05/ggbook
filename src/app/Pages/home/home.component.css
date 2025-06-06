@@ -1,3 +1,4 @@
+/*NOTA: Profile main mq escritorio margin top 1 em y profile text en mq para mobile */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -32,8 +33,8 @@
   /* Evita que la imagen se reduzca */
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: center;  
+  margin-top: 1em;
 }
 
 
@@ -259,6 +260,7 @@
   .profile-header-text {
     text-align: center;
     /* Centra el texto cuando está apilado */
+    margin-top: 1em;
   }
 
   .profile-main {
@@ -280,11 +282,13 @@
 
   .profile-header-text span {
     font-size: 1.5rem;
+    
   }
 
   .tech-title {
     font-size: 2em;
     margin-bottom: 1.8em;
+    
   }
 
   .tech-container {
@@ -310,6 +314,7 @@
 /* movile */
 @media screen and (max-width: 480px) {
 
+  
   .profile-header h2 {
     font-size: 2.8rem;
   }
@@ -320,11 +325,12 @@
 
   .profile-header-text span {
     font-size: 1.2rem;
-
+    
   }
 
   .tech-title {
     font-size: 1.8em;
+    
   }
 
   .tech-container {

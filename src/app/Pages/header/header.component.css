@@ -102,10 +102,12 @@ mat-toolbar {
 @media (min-width: 769px) and (max-width: 1024px) {
   mat-toolbar {
     padding: 0 24px;
+    
   }
 
   .toolbar-right button.mat-button {
     font-size: 15px;
+    
   }
 }
 
@@ -114,7 +116,11 @@ mat-toolbar {
 @media (max-width: 768px) {
 
   mat-toolbar {
-    width: 96%;       
+    width: 96%;   
+    display: flex;
+    align-items: center !important;   
+    justify-content: center !important;
+    
   }
 
   .cv-button {
@@ -141,6 +147,7 @@ mat-toolbar {
     justify-content: left;
     padding-right: 0;
     gap: 0.2rem;
+    margin-left: 0;
   }
 
   .toggle-button,
@@ -156,7 +163,7 @@ mat-toolbar {
     display: flex;
     gap: 0.01em;
     padding-top: 0.1em;
-  } 
+   } 
 
 
 }
