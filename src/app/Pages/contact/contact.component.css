@@ -54,8 +54,8 @@ mat-icon {
   white-space: nowrap;
 }
 
-.contact-link:hover{
-    color: var(--primary-color);
+.contact-link:hover {
+  color: var(--primary-color);
 }
 
 /* Gracias por pasar */
@@ -79,7 +79,7 @@ mat-icon {
   .contact-list {
     flex-direction: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 1.2em;
   }
 
   .contact-link,
@@ -96,7 +96,12 @@ mat-icon {
 /* Para móviles pequeños */
 @media screen and (max-width: 480px) {
   .contact-container {
-    padding: 1.5em 1em;
+    padding: 0.01em 1em;
+  }
+
+  .contact-container h2 {
+    font-size: 1.6em;
+
   }
 
   .contact-link,
