@@ -1,9 +1,4 @@
 /*NOTA: Profile main mq escritorio margin top 1 em y profile text en mq para mobile */
-:root {
-  --transition-duration: 0.3s;
-  --transition-timing: ease-in-out;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -11,53 +6,55 @@
   text-align: center;
   display: grid;
   row-gap: 80px;
-  transition: background-color var(--transition-duration) var(--transition-timing);
 }
+
 
 .profile-header {
   display: flex;
   align-items: center;
   margin-top: 5.5em;
   text-align: left;
+  /* Texto alineado a la izquierda dentro del bloque */
   justify-content: center;
+  /* Centra la imagen + texto como conjunto */
   gap: 45px;
+
 }
 
 .profile-header-text {
   text-align: left;
+  /* El texto dentro alineado a la izquierda */
 }
+
 
 /* Ajuste del contenedor de la imagen */
 .profile-main {
   flex-shrink: 0;
+  /* Evita que la imagen se reduzca */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   margin-top: 1em;
 }
 
-.profile-header-text span {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 18px 0 0;
-  display: block;
-  color: var(--accent-color);
-}
 
-.profile-header-text h2 {
-  font-size: 4.5rem;
+.profile-header h2 {
+  font-size: 4rem;
   font-weight: bold;
   margin: 0;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
+
 }
 
 .profile-header-text h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  margin: 15px 0 5px;
-  color: var(--text-color);
-  transition: color var(--transition-duration) var(--transition-timing);
+  margin: 12px 0 1px;
+}
+
+.profile-header span {
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin: 14px 0 0;
 }
 
 .profile-photo-wrapper {
@@ -88,17 +85,23 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
+
 /* --- Sección de Tecnologías (Development Stack) --- */
 .tech-section {
   padding: 1em 0;
+  /* Padding interno para esta sección */
 }
 
 .tech-title {
   font-size: 1.7em;
+  /* Título más grande y con más impacto */
   font-weight: 600;
+  /* Seminegrita para seriedad */
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
+  /* Color de texto principal */
   margin-bottom: 2.5em;
+  /* Espacio generoso debajo del título */
   letter-spacing: -0.01em;
 }
 
@@ -107,31 +110,48 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  /* Más espacio entre las tarjetas de tecnología */
   max-width: 1000px;
+  /* Limita el ancho del contenedor de tecnologías */
   margin: 0 auto;
 }
 
 .tech-card {
   padding: 14px 28px;
+  /* Padding más generoso */
+
+
   color: var(--text-color);
+  /* Usa el color de texto del tema */
   border-radius: 10px;
+  /* Bordes suaves */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  /* Sombra sutil pero presente */
   font-weight: 500;
   font-size: 1.1rem;
+  /* Un poco más grande para mejor legibilidad */
   font-family: 'Poppins', sans-serif;
-  transition: all var(--transition-duration) var(--transition-timing);
+  /* Consistencia en la fuente */
+  transition: all 0.3s ease;
   border: 1px solid rgba(184, 173, 199, 0.1);
+  /* Borde muy sutil */
 }
 
 .tech-card:hover {
   transform: translateY(-4px);
+  /* Ligera elevación al pasar el mouse */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* Sombra que se intensifica */
   background-color: rgba(152, 126, 178, 0.05);
+  /* Fondo muy sutilmente diferente al hover */
   border-color: #1976d2;
+  /* Borde un poco más visible */
 }
 
 /* --- Media Queries --- */
+
 @media screen and (max-width: 1600px) {
+
   .container {
     width: 80%;
     margin: 0 auto;
@@ -141,22 +161,47 @@
     row-gap: 40px;
   }
 
+
   .profile-header {
     display: flex;
     align-items: center;
     margin-top: 5em;
     text-align: left;
+    /* Texto alineado a la izquierda dentro del bloque */
     justify-content: center;
+    /* Centra la imagen + texto como conjunto */
     gap: 15px;
+
   }
+
 
   .profile-photo {
     width: 240px;
     height: 240px;
+
   }
 
   .profile-header h2 {
     font-size: 4.2rem;
+  }
+
+  .profile-header h3 {
+    font-size: 2.4rem;
+    margin: 18px 0;
+  }
+
+  .tech-title {
+    margin-bottom: 1.8em;
+    font-size: 1.6rem;
+  }
+
+  .tech-container {
+    gap: 20px;
+  }
+
+  .tech-card {
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 }
 
@@ -178,7 +223,26 @@
   .profile-header h2 {
     font-size: 4.4rem;
   }
+
+  .profile-header h3 {
+    font-size: 2.5rem;
+  }
+
+  .tech-title {
+    margin-bottom: 2em;
+  }
+
+  .tech-container {
+    gap: 20px;
+  }
+
+  .tech-card {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
 }
+
+
 
 @media screen and (max-width: 768px) {
   .container {
@@ -189,15 +253,22 @@
 
   .profile-header {
     flex-direction: column;
+    /* Apila la foto y el texto en móvil */
     margin-top: 3.7em;
   }
 
   .profile-header-text {
     text-align: center;
+    /* Centra el texto cuando está apilado */
   }
 
   .profile-main {
     display: none;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
   }
 
   .profile-header h2 {
@@ -210,17 +281,20 @@
 
   .profile-header-text span {
     font-size: 1.5rem;
+    
   }
 
   .tech-title {
     font-size: 2em;
     margin-bottom: 1.8em;
+    
   }
 
   .tech-container {
     width: 70%;
+    
     gap: 20px;
-    justify-content: space-between;
+    justify-content:space-between;
   }
 
   .tech-card {
@@ -232,9 +306,14 @@
   .profile-photo-mobile {
     display: flex;
   }
+
 }
 
+
+/* movile */
 @media screen and (max-width: 480px) {
+
+  
   .profile-header h2 {
     font-size: 2.8rem;
   }
@@ -245,10 +324,12 @@
 
   .profile-header-text span {
     font-size: 1.2rem;
+    
   }
 
   .tech-title {
     font-size: 1.8em;
+    
   }
 
   .tech-container {
@@ -261,4 +342,7 @@
     font-size: 0.9rem;
     padding: 8px 16px;
   }
+
+
+
 }
