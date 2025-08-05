@@ -22,6 +22,7 @@ export class HomeComponent {
 
   technologies = [
     { name: 'C#' },
+    { name: 'n8n' },
     { name: 'Angular' },
     { name: 'React' },
     { name: 'Kotlin' },
