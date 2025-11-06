@@ -30,6 +30,7 @@ export class HomeComponent {
     { name: 'Java' },
     { name: 'JavaScript' },
     { name: 'TypeScript' },
+    { name: 'Wordpress' },
     { name: 'SQL Server' },
     { name: '.NET Core' },
     { name: 'MERN Stack' },
