@@ -27,28 +27,18 @@
 
 /* --- Tarjeta de Proyecto (mat-card) --- */
 .project-card {
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  /* Sombra muy suave para elegancia */
-  border: 1px solid rgba(184, 173, 199, 0.15);
-  /* Borde apenas perceptible */
+  border: 1px solid var(--border-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
-  /* Padding interno generoso */
   text-align: center;
-  /* Contenido alineado a la izquierda */
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  /* Elevación sutil al pasar el cursor */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  /* Sombra ligeramente más marcada */
   border: 1px solid var(--primary-color);
-  /* Borde un poco más visible */
 }
 
 /* --- Contenido de la Tarjeta --- */
@@ -84,19 +74,19 @@
 
 /* tener en cuenta bg para style */
 .tech-tag {
-  background-color: rgba(152, 126, 178, 0.08);
-  /* Fondo muy sutil y translúcido */
+  background-color: var(--bg-hover-color);
   padding: 0.5em 1em;
   font-size: 0.8em;
   border-radius: 6px;
-  /* Bordes menos redondeados para formalidad */
   font-weight: 500;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid var(--border-color);
 }
 
 .tech-tag:hover {
-  background-color: rgba(152, 126, 178, 0.15);
-  /* Un poco más de fondo al pasar el cursor */
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
 }
 
 /* --- Enlaces de Acciones de Proyecto --- */
@@ -122,22 +112,17 @@
   font-weight: 500;
   padding: 0.7em 1.2em;
   border-radius: 8px;
-  border: 1px solid rgba(184, 173, 199, 0.4);
-  /* Borde sutil, pero visible */
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
   transition: all 0.3s ease;
 }
 
 .projectsBt-item a:hover {
-  background-color: rgba(152, 126, 178, 0.05);
-  /* Fondo muy suave al pasar el cursor */
-  color: var(--primary-color);
-  /* Cambio sutil al color primario */
+  background-color: var(--primary-color);
+  color: #ffffff;
   border-color: var(--primary-color);
-  /* Borde cambia a primario */
   transform: translateY(-2px);
-  /* Muy ligera elevación */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  /* Sombra mínima */
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .projectsBt-item a mat-icon {
@@ -169,7 +154,7 @@
 @media screen and (max-width: 768px) {
   .project-wrapper {
     justify-content: center;
-    
+
   }
 
   .project-title {
@@ -180,20 +165,26 @@
 
   }
 
-    .project-container {
-    width: 100%; /* CAMBIO: ocupar todo el ancho disponible */
-    padding: 0 0em; /* CAMBIO: padding lateral para respiración */
+  .project-container {
+    width: 100%;
+    /* CAMBIO: ocupar todo el ancho disponible */
+    padding: 0 0em;
+    /* CAMBIO: padding lateral para respiración */
     display: grid;
-    grid-template-columns: 1fr; /* CAMBIO: una columna completa */
-    justify-items: center; /* CAMBIO: centrar las cards horizontalmente */
+    grid-template-columns: 1fr;
+    /* CAMBIO: una columna completa */
+    justify-items: center;
+    /* CAMBIO: centrar las cards horizontalmente */
   }
 
   .project-card {
     width: 100%;
-    max-width: 400px; /* CAMBIO: limitar ancho para que no se vean gigantes */
+    max-width: 400px;
+    /* CAMBIO: limitar ancho para que no se vean gigantes */
     padding: 1em;
     border-radius: 0.8em;
   }
+
   .card-content>span:first-child {
     font-size: 1.6em;
   }

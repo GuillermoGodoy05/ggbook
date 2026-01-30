@@ -1,62 +1,67 @@
 /* General */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* Opcional, evita desbordes horizontales */
+  /* Premium font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-
-/* Tema claro */
+/* Tema claro (Light Mode) */
 .light-theme {
+  /* Slate-based light palette */
+  --bg-color: #f8fafc;        /* Slate 50 */
+  --bg-color-card: #ffffff;   /* White */
+  --text-color: #334155;      /* Slate 700 */
+  --text-color-secondary: #64748b; /* Slate 500 */
+  --text-color-toolbar: #334155;
+  --accent-color: #6366f1;    /* Indigo 500 */
+  --bg-hover-color: #e2e8f0;  /* Slate 200 */
 
-  --bg-color: #ece6f0;
-  --bg-color-card: #f1eaf5;
-  --text-color: #5c516d;
-  --text-color-toolbar: #77688d;
-  --accent-color: #5a3554;
-  --bg-hover-color: #f1ddfc;
+  /* RGB values for translucent effects (matches --bg-color) */
+  --bg-color-r: 248;
+  --bg-color-g: 250;
+  --bg-color-b: 252;
 
-
-  /* de las etiquetas a */
-
-  --bg-color-r: 236;
-  --bg-color-g: 230;
-  --bg-color-b: 240;
-
-
-  --primary-color: #1976d2;
-  /* Material Blue 700 */
-  /* Material Blue 300 */
-  /* Cyan 500 */
-  --border-color: #e0e0e0;
+  --primary-color: #4f46e5;   /* Indigo 600 */
+  --border-color: #e2e8f0;    /* Slate 200 */
+  --shadow-color: rgba(0, 0, 0, 0.05);
 }
 
 
-/* Tema oscuro */
+/* Tema oscuro (Dark Mode) */
 .dark-theme {
-  --bg-color: #121218;
-  --bg-color-card: #1d1d26;
-  --text-color: #c2b7df;
-  --text-color-toolbar: #c2b7df;
-  --accent-color: #90caf9;
-  --bg-hover-color: #2b2b3b;
+  /* Slate-based dark palette */
+  --bg-color: #0f172a;        /* Slate 900 */
+  --bg-color-card: #1e293b;   /* Slate 800 */
+  --text-color: #e2e8f0;      /* Slate 200 */
+  --text-color-secondary: #94a3b8; /* Slate 400 */
+  --text-color-toolbar: #f1f5f9;   /* Slate 100 */
+  --accent-color: #38bdf8;    /* Sky 400 */
+  --bg-hover-color: #334155;  /* Slate 700 */
 
+  /* RGB values for translucent effects (matches --bg-color) */
+  --bg-color-r: 15;
+  --bg-color-g: 23;
+  --bg-color-b: 42;
 
-  --bg-color-r: 18;
-  --bg-color-g: 18;
-  --bg-color-b: 24;
-
-  --primary-color: #3ea6ff;
-  --border-color: #3a3844;
-  --bg-card-color: #1a1a22;
-
+  --primary-color: #0ea5e9;   /* Sky 500 */
+  --border-color: #334155;    /* Slate 700 */
+  --bg-card-color: #1e293b;
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -64,34 +69,35 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 mat-toolbar {
-  
   z-index: 1000;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b), 0.5) !important;
-  backdrop-filter: blur(4px);
-  /* Mantén tu efecto de desenfoque */
-  -webkit-backdrop-filter: blur(4px);
+  /* Modern translucent effect */
+  background: rgba(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b), 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--text-color-toolbar) !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.tech-card {
-  background-color: var(--bg-color-card);
-}
-
-/* Project component */
-.project-card {
+/* Card Styles */
+.tech-card, .project-card, .experience-container {
   background-color: var(--bg-color-card) !important;
-  /* color: red !important; */
+  border-radius: 16px; /* Modern rounded corners */
+  box-shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
-.experience-container {
-  background-color: var(--bg-color-card);
+.tech-card:hover, .project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color);
 }
 
 
@@ -100,14 +106,33 @@ mat-toolbar {
   height: 100%;
   border-radius: 70px;
   object-fit: cover;
-  border: 0.2em solid var(--border-color);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border: 4px solid var(--border-color); /* Thicker, cleaner border */
+  box-shadow: 0 4px 20px var(--shadow-color);
   display: block;
   position: relative;
   z-index: 20;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button .mat-button {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: #ffffff; /* Always white text on primary buttons usually looks best */
+}
+
+/* Scrollbar Styling for Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color); /* Subtle scrollbar */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-secondary);
 }

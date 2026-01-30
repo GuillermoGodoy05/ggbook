@@ -1,43 +1,37 @@
 .project-wrapper {
-    padding: 1em 2em;
-    text-align: center;
+  padding: 1em 2em;
+  text-align: center;
 }
 
 .project-title {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 2em;
-    margin-bottom: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
 }
 
 .experience-container {
-    width: 75%;
-    border-radius: 12px;
-    margin: auto;
-    display: flex;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    /* Sombra muy suave para elegancia */
-    border: 1px solid rgba(184, 173, 199, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-
 .experience-container:hover {
-    transform: scale(1.01);
-    border-color: #1976d2;
-    transform: translateY(-4px);
-    /* Elevación sutil al pasar el cursor */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    /* Sombra ligeramente más marcada */
+  transform: scale(1.01);
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 
 .experience {
-    justify-content: center;
-    text-align: left;
-    font-size: 1.8em;
-    padding: 2em;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.8em;
+  padding: 2em;
 }
 
 /*  
@@ -48,7 +42,7 @@
 }
     */
 
-    /* Tablets y móviles hasta 768px */
+/* Tablets y móviles hasta 768px */
 @media screen and (max-width: 768px) {
   .project-wrapper {
     padding: 1.5em 1em;

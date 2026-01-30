@@ -33,7 +33,7 @@
   /* Evita que la imagen se reduzca */
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin-top: 1em;
 }
 
@@ -118,34 +118,18 @@
 
 .tech-card {
   padding: 14px 28px;
-  /* Padding más generoso */
-
-
   color: var(--text-color);
-  /* Usa el color de texto del tema */
-  border-radius: 10px;
-  /* Bordes suaves */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-  /* Sombra sutil pero presente */
   font-weight: 500;
   font-size: 1.1rem;
-  /* Un poco más grande para mejor legibilidad */
   font-family: 'Poppins', sans-serif;
-  /* Consistencia en la fuente */
   transition: all 0.3s ease;
-  border: 1px solid rgba(184, 173, 199, 0.1);
-  /* Borde muy sutil */
+  border: 1px solid var(--border-color);
 }
 
 .tech-card:hover {
   transform: translateY(-4px);
-  /* Ligera elevación al pasar el mouse */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  /* Sombra que se intensifica */
-  background-color: rgba(152, 126, 178, 0.05);
-  /* Fondo muy sutilmente diferente al hover */
-  border-color: #1976d2;
-  /* Borde un poco más visible */
+  background-color: var(--bg-hover-color);
+  border-color: var(--primary-color);
 }
 
 /* --- Media Queries --- */
@@ -281,20 +265,20 @@
 
   .profile-header-text span {
     font-size: 1.5rem;
-    
+
   }
 
   .tech-title {
     font-size: 2em;
     margin-bottom: 1.8em;
-    
+
   }
 
   .tech-container {
     width: 70%;
-    
+
     gap: 20px;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   .tech-card {
@@ -313,7 +297,7 @@
 /* movile */
 @media screen and (max-width: 480px) {
 
-  
+
   .profile-header h2 {
     font-size: 2.8rem;
   }
@@ -324,12 +308,12 @@
 
   .profile-header-text span {
     font-size: 1.2rem;
-    
+
   }
 
   .tech-title {
     font-size: 1.8em;
-    
+
   }
 
   .tech-container {
