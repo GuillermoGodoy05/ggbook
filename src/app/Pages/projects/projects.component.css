@@ -132,7 +132,7 @@
 }
 
 .projectsBt-item a:hover mat-icon {
-  color: var(--primary-color);
+  color: #ffffff;
 }
 
 
