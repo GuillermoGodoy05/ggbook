@@ -53,10 +53,10 @@ export class ProjectsComponent {
       link2: 'https://casamientoevent.netlify.app/',
     },
     {
-      name: 'Sipmar Page',
-      description: 'Wordpress page',
+      name: 'Sipmar',
+      description: 'WordPress page about a security company',
 
-      tech: ['Wordpress', 'Blocksy'],
+      tech: ['WordPress', 'Blocksy'],
 
       label2: 'Try',
       icon2: 'computer',
