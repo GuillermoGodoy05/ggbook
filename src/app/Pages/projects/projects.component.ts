@@ -43,6 +43,26 @@ export class ProjectsComponent {
 
     },
     {
+      name: 'Wedding App',
+      description: 'Angular app con ayuda de IA y Supabase',
+
+      tech: ['Angular', 'Supabase', 'n8n'],
+
+      label2: 'Try',
+      icon2: 'computer',
+      link2: 'https://casamientoevent.netlify.app/',
+    },
+    {
+      name: 'Sipmar Page',
+      description: 'Wordpress page',
+
+      tech: ['Wordpress', 'Blocksy'],
+
+      label2: 'Try',
+      icon2: 'computer',
+      link2: 'https://sipmar.com/',
+    },
+    {
       name: 'My Finance',
       description: 'Aplication about personal finance',
 
@@ -71,7 +91,7 @@ export class ProjectsComponent {
       name: 'Criptomonedas',
       description: 'Cripto app + API',
 
-      tech: ['.Net', 'Styled Components', 'API Axios'],
+      tech: ['React', 'Styled Components', 'API'],
 
       label2: 'Try',
       icon2: 'computer',
